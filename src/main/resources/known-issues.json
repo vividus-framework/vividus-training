@@ -1,2 +1,11 @@
-{
+ {
+    "VVD-1": {
+        "type": "Internal",
+        "assertionPattern": ".*The number of found elements.*",
+        "storyPattern": "CleanCart",
+        "scenarioPattern": ".*products in the cart and clean it",
+        "failScenarioFast": true,
+        "failStoryFast": true,
+        "description": "Reset App State menu button doesn't reset buttons for added in cart products"
+    }
 }
