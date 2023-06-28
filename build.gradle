@@ -1,5 +1,5 @@
-project.description = 'put project description here'
-group = 'put your project group here, e.g. org.vividus.starter'
+project.description = 'VIVIDUS Training project'
+group = 'org.vividus.training'
 
 ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDir}/${buildSystemVersion}"
 
@@ -11,4 +11,5 @@ ext {
 
 dependencies {
     implementation(group: 'org.vividus', name: 'vividus', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus-plugin-web-app', version: vividusVersion)
 }
