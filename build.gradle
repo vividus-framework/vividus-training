@@ -1,5 +1,5 @@
 project.description = 'VIVIDUS Training project'
-group = 'org.vividus.starter'
+group = 'org.vividus.training'
 
 ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDir}/${buildSystemVersion}"
 
