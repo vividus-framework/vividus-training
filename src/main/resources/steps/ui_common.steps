@@ -1,1 +1,9 @@
+Composite: When I take screenshot of Homepage
+When I wait until element located by `caseSensitiveText(Swag Labs)` appears
+Then `${current-page-url}` is equal to `https://www.saucedemo.com/`
+When I take screenshot
 
+Composite: When I login with $userName and $password
+When I enter `${swagGoodUserName}` in field located by `xpath(//*[@id="user-name"])`
+When I enter `${swagPassword}` in field located by `xpath(//*[@id="password"])`
+When I click on element located by `xpath(//*[@id="login-button"])`
