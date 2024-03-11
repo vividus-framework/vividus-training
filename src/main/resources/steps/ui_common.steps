@@ -1,6 +1,9 @@
 Composite: When I take screenshot of Homepage
 When I wait until element located by `caseSensitiveText(Swag Labs)` appears
 Then `${current-page-url}` is equal to `https://www.saucedemo.com/`
+When I ${baselineAction} baseline with name `loginPage` ignoring:
+|ACCEPTABLE_DIFF_PERCENTAGE|
+|5                         |
 
 Composite: When I login with $userName and $password
 When I enter `${swagBrokenUserName}` in field located by `xpath(//*[@id="user-name"])`

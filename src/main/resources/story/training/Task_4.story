@@ -1,9 +1,7 @@
 Scenario: Navigate to the website homepage
 Given I am on main application page
 When I take screenshot of Homepage
-When I ${baselineAction} baseline with name `loginPage` ignoring:
-|ACCEPTABLE_DIFF_PERCENTAGE|
-|5                         |
+
 
 Scenario: Log in as a Good User
 When I login with ${userName} and ${password}
