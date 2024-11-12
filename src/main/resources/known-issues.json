@@ -1,2 +1,17 @@
 {
+    "BUG-001": {
+    "type": "Internal",
+    "assertionPattern": ".*Expected: \"https:\\/\\/www.saucedemo.com/inventory.html\" Actual: was \"https:\\/\\/www.saucedemo.com/\".*",
+    "scenarioPattern": "Log in as Locked User.*",
+    "stepPattern": "Then \\`\\$\\{current-page-url\\}\\` is equal to \\`https:\\/\\/www.saucedemo.com/inventory.html\\`",
+    "description": "To be fixed in the upcoming release"
+
+  },
+  "BUG-002": {
+    "type": "Internal",
+    "assertionPattern": ".*Expected: number of elements is a value equal to <6> Actual: <0>.*",
+    "scenarioPattern": "Log in as Locked User.*",
+    "stepPattern": "Then number of elements found by `By.className\\(inventory_item\\)` is equal to `6`",
+    "description": "To be fixed in the upcoming release"
+  }
 }
