@@ -26,6 +26,6 @@
 
     Review the resulting Allure reports. <br />
 
-    Pay attention to the places where @group and @requirementId meta tags are mentioned. For more information on available meta tags and how to use them, refer to the [VIVIDUS docs portal](https://docs.vividus.dev/vividus/latest/tests-configuration.html#_meta_tags).
+    Pay attention to the places where @group and @requirementId meta tags are mentioned. For more information on available meta tags and how to use them, refer to the [VIVIDUS docs portal](https://docs.vividus.dev/vividus/latest/configuration/tests-configuration.html#_meta_tags).
 
 1. Once the task is completed, make sure to commit all your local changes with commit message "{yourSurname}" to your current local branch.
