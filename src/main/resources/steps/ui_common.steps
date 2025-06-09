@@ -1,0 +1,37 @@
+!--Task_03
+!composite
+I am on the SauceDemo homepage
+When I navigate to '${web-application.main-page-url}'
+
+!composite
+I log in as user with username '$username' and password '$password'
+And I input '$username' into field with name 'user-name'
+And I input '$password' into field with name 'password'
+And I click on element located by xpath '//input[@id="login-button"]'
+ 
+!--Task_04
+!composite
+I am on the SauceDemo homepage
+When I navigate to '${web-application.main-page-url}'
+Then I perform visual check with baseline 'home-page' and action '${baselineAction}' and acceptable diff percentage '5'
+
+!composite
+I log in as user with username '$username' and password '$password'
+And I input '$username' into field with name 'user-name'
+And I input '$password' into field with name 'password'
+And I click on element located by xpath '//input[@id="login-button"]'
+Then I perform visual check with baseline 'inventory-page' and action '${baselineAction}' ignoring elements by xpaths '//*[@class="inventory_item_img"]' 
+
+!--Task_08
+
+!composite
+Navigate to SauceDemo homepage
+When I navigate to '${web-application.main-page-url}'
+Then I perform visual check with baseline 'homepage' and action '${baselineAction}' and acceptable diff percentage '5'
+ 
+!composite
+Log in to SauceDemo with user '$username' and password '$password'
+And I input '$username' into field with name 'user-name'
+And I input '$password' into field with name 'password'
+And I click on element located by xpath '//input[@id="login-button"]'
+Then page title is equal to 'Swag Labs'

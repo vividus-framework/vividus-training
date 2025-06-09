@@ -1,2 +1,28 @@
-{
-}
+[
+  {
+    "issueType": "BUG",
+    "issueId": "BUG-001",
+    "name": "Locked user cannot reach inventory page",
+    "description": "This is a known bug for locked users.",
+    "regex": "Then page title is equal to 'Swag Labs'",
+    "status": "OPEN"
+  },
+  {
+    "issueType": "BUG",
+    "issueId": "BUG-002",
+    "name": "Inventory count fails for locked user",
+    "description": "Known issue, locked user does not load inventory page.",
+    "regex": "Then number of elements found by xpath '//div\\[@class=\"inventory_item\"\\]' is equal to '6'",
+    "status": "OPEN"
+  },
+  {
+    "issueType": "BUG",
+    "issueId": "BUG-003",
+    "name": "Thank you message mismatch",
+    "description": "Known issue: incorrect thank you message.",
+    "regex": "Then I assert that text from element located by xpath '//h2' is equal to 'Thank you for placing an order!'",
+    "status": "OPEN"
+  }
+]
+ 
+
