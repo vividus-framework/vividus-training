@@ -6,7 +6,23 @@ ext.buildSystemPath = "${System.env.VIVIDUS_BUILD_SYSTEM_HOME?:buildSystemRootDi
 apply from: "${buildSystemPath}/vividus-test-project.gradle"
 
 dependencies {
-    implementation platform(group: 'org.vividus', name: 'vividus-bom', version: '0.6.14')
+    implementation platform(group: 'org.vividus', name: 'vividus-bom', version: '0.6.15-SNAPSHOT')
     implementation(group: 'org.vividus', name: 'vividus')
+    implementation(group: 'org.vividus', name: 'vividus-soft-assert')
+    implementation(group: 'org.vividus', name: 'vividus-util')
     implementation(group: 'org.vividus', name: 'vividus-plugin-web-app')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-saucelabs')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-applitools')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-accessibility')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-excel')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-rest-api')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-web-app-to-rest-api')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-html')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-xml')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-visual')
+    implementation(group: 'org.vividus', name: 'vividus-extension-visual-testing')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-shell')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-lighthouse')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-datetime')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-csv')
 }
