@@ -1,0 +1,28 @@
+
+Composite: When Navigate to the SauceDemo website homepage
+Given I am on main application page
+When I wait until element located by `caseSensitiveText(Swag Labs)` appears
+Then `${current-page-url}` is equal to `https://www.saucedemo.com/`
+When I take screenshot
+
+Composite: When I fill $swagGoodUserName,$swagPassword to saucedemo website
+When I enter `<swagGoodUserName>` in field located by `id(user-name)`
+When I enter `<swagPassword>` in field located by `id(password)`
+When I click on element located by `id(login-button)`
+Then number of elements found by `xpath(//*[contains(text(),'Products')])` is equal to `1`
+When I take screenshot
+
+Composite: When reset the application and  logout 
+When I click on element located by `id(react-burger-menu-btn)`
+When I click on element located by `linkText(Reset App State)`
+When I click on element located by `linkText(Logout)`
+
+Composite: When I fill firstname,lastname and postal code
+Given I initialize story variable `testFirstName` with value `#{generate(regexify '[A-Z][a-z]{10}')}` 
+Given I initialize story variable `testLastName` with value `#{generate(regexify '[A-Z][a-z]{10}')}` 
+Given I initialize story variable `postalCode` with value `#{generate(regexify '[A-Z]{3}-[1-9]{5}')}` 
+When I enter `${testFirstName}` in field located by `id(first-name)`
+When I enter `${testLastName}` in field located by `id(last-name)`
+When I enter `${postalCode}` in field located by `id(postal-code)`
+When I take screenshot
+

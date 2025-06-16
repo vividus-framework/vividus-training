@@ -1,2 +1,23 @@
 {
+      "BUG-001": { 
+        "type": "Internal",
+        "assertionPattern": ".*Expected: number of elements is a value equal to <1> Actual:.*", 
+        "scenarioPattern": ".*Log in as a Locked User.*", 
+        "stepPattern": ".*is equal to.*", 
+        "description": "Issue to be fixed in the upcoming release" 
+    },
+    "BUG-002": { 
+        "type": "Internal",
+        "assertionPattern": ".*https://www.saucedemo.com/inventory.*", 
+        "scenarioPattern": ".*Log in as a Locked User.*", 
+        "stepPattern": ".*is equal to `https://www.saucedemo.com/inventory.html`.*", 
+        "description": "Issue to be fixed in the upcoming release" 
+    },
+    "BUG-003": { 
+        "type": "Internal",
+        "assertionPattern": ".*Thank you for your order!.*", 
+        "scenarioPattern": ".*4.4,4.5,4.6,4.7 Populate checkout data.*", 
+        "stepPattern": ".*is equal to `Thank you for you order!`", 
+        "description": "Issue to be fixed in the upcoming release" 
+    }
 }
